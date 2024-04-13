@@ -1,4 +1,4 @@
-import { FiShoppingCart } from "react-icons/fi"
+import CartIcon from "./CartIcon"
 
 const Header = () => {
     return (
