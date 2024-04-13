@@ -1,9 +1,9 @@
+import Header from "./components/Header"
+
 function App() {
-
-
   return (
-    <div className='App'>
-      hello!
+    <div className="container mx-auto p-4">
+      <Header />
     </div>
   )
 }
