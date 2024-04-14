@@ -6,11 +6,14 @@ import { useState } from "react"
 function App() {
   const [cart, setCart] = useState([])
 
+  const emptyCart = () => {
+    setCart([])
+  }
   return (
     <div className="container mx-auto p-4">
-      <Header />
+      <Header cart = {cart}/>
       <Product cart={cart}  setCart={setCart}/>
-      <Cart cart = {cart} />
+      <Cart cart = {cart} emptyCart= {emptyCart}/>
     </div>
   )
 }
